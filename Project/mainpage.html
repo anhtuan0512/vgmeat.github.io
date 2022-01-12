@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complete Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<div class="preloader">
+		<img src="airplane.png" alt="" class="airplane">
+		<h2>Landing on our website...</h2>
+		<img src="cloud.png" alt="" class=" cloud cloud1">
+		<img src="cloud.png" alt="" class=" cloud cloud2">
+		<img src="cloud.png" alt="" class="cloud3 cloud">
+	</div>
+	<script>
+		window.onload = function(){
+			setTimeout(function(){
+				var loader = document.getElementsByClassName("preloader")[0];
+				loader.style.display ="none";
+			},3000)
+		}
+	</script>
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>	
+	<script>
+		/*let progress = document.getElementById('progressbar');
+		let totalHeight = document.body.scrollHeight - 
+		window.innerHeight;
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset / totalHeight) * 100;
+			progress.style.height = progressHeight + "%";
+		}*/
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop(),
+			dh = $(document).height(),
+			wh =$(window).height();
+			scrollPercent = (scroll / (dh - wh))*100;
+			$('#progressbar').css('height', scrollPercent + '%');
+		})
+	</script>	
+	<div class="ring">	
+		  <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            	<div class="coccoc-alo-ph-circle"></div>
+           		<div class="coccoc-alo-ph-circle-fill"></div>
+            	<div class="coccoc-alo-ph-img-circle"></div>
+        	</div>
+		
+	</div>		
+	
+		
+	<div class="scrollTop" onclick="scrollToTop()";><i class="fas fa-arrow-up"></i></div>
+	<section class="">
+		
+	</section>
+	<div class="wrap">
+		
+	
+	<header>
+		<div class="logo">
+			<img src="LOGO2.png" alt="">
+		</div>
+		<ul class="menu-header">
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="product.html" title=""><span>Our Products</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list" >
+					<li><a href="" >Burgers</a></li>
+					<li><a href="" >Ground Meat</a></li>
+					<li><a href="" >Sausage</a></li>
+					<li><a href="" >MeatBalls</a></li>
+					<li><a href="" >Chicken</a></li>
+					<li><a href="product.html" >View All</a></li>
+				</ul>
+			</div>	
+			<li><a href="foodservice.html" >Food Service</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="learn.html" title=""><span>Learn</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Mission</a></li>
+					<li><a href="ingredients.html" >Ingredients</a></li>
+					
+				</ul>
+			</div>	
+			<li><a href="cook.html" >Cook</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="buy.html" title=""><span>Buy</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="shop.html" >Shop online</a></li>
+					<li><a href="where-to-find.html" >Where to find</a></li>
+					
+				</ul>
+			</div>	
+		</ul>
+		<div class="icon">
+				<i class="fas fa-bars" id="menu-btn"></i>
+				<i class="fas fa-search " id="search-btn"></i>
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
+			</div>
+		<div class="wrap-search">
+			
+		
+		<div class="search-form search-input">
+			<div class="fas fa-times" id="close-search"></div>
+				
+		
+			
+				
+			
+		<input type="search" placeholder="search here..." id="search-box" id="search-box">
+		<div class="autocom-box">
+			<li>Burgers
+
+			</li>
+			<li>Ground Meat</li>
+			<li>Sausage</li>
+			<li>MeatBalls</li>
+			<li>Chicken</li>
+
+		</div>
+
+		<a href="product.html" title=""><i class="fas fa-search"></i></a>
+		</div>
+
+	</div>
+	
+	<div class="shopping-cart">
+		<div class="title">
+		<h1>YOUR CART</h1>
+	<i class="fas fa-times" id="close-shopping"></i>
+		</div>
+		<div class="text-center">
+			<span>YOUR CART IS EMPTY</span>
+			<div class="btn-shopping">
+				<a href="shop.html"><span>SHOP OUR PRODUCT</span></a>
+			</div>
+		</div>
+		<div class="cartdrawer-footer">
+			<button type="">Checkout</button>
+		</div>
+	</div>
+	</header>
+		<div class="home-content">
+			<div class="content-text" id="slideshowText">				
+				<div class="active">
+					<section>
+						<h1>Plant-based VGMEAT </h1>
+			<h2>Meatless revolution</h2>
+			
+					</section>
+			
+					
+						
+				<span class="btn-home"><a href="#" onclick="toggle();" >Explore More</a></span>				
+				</div>
+
+				<div >
+					<section>
+						<h1>Delicious Meal</h1>
+			<h2>Good for health and enviroment</h2>
+					</section>
+			
+					
+						
+				<span class="btn-home"><a href="#" onclick="toggle();">Explore More</a>	</span>			
+				</div>
+
+				<div >
+					<section>
+			
+			<h1>100%</h1>
+			<h2>Vegan Protein</h2>
+				</section>	
+			
+				<span class="btn-home"><a href="#" onclick="toggle();" >	Explore More</a></span>		
+				</div>
+
+			</div>
+			<div class="right-side">
+				
+			
+			<div class="bannerImg" id="slideshow">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/596b0818-9114-4a26-b5a1-aa22bb563db9.jpeg"  class="active" >
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/151a5c8d-6cfc-43e6-a3a5-7ea3577b1e1b.jpeg" alt="">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/6fdd4e25-fd2e-412c-b52b-7d6048007186.jpeg" alt="">
+			</div>
+			<div class="controls">
+				<i class="fas fa-chevron-left" onclick="prevSlide();prevSlideText();"></i>
+				<i class="fas fa-chevron-right" onclick="nextSlide();nextSlideText();"></i>
+			</div>
+			</div>
+		</div>
+	
+		
+		<section class="song"	>
+			<div class="wave wave1"></div>
+			<div class="wave wave2"></div>	
+			<div class="wave wave3"></div>
+			<div class="wave wave4"></div>
+		</section>
+		<div class="newsletter">
+			<h2>Stay Tuned</h2>
+			<p>Get notified at launch</p>
+			<div class="input-email">
+				<form >
+					<input type="email" required="" placeholder="Enter your email">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<img src="close.png" alt="" class="close-newsletter" onclick="toggle();">
+		</div>
+
+
+	</div>
+	<script>
+		function toggle() {
+			var newsletter = document.querySelector('.newsletter');
+			newsletter.classList.toggle('active');
+		}
+	</script>
+	<section class="our-mission">
+		<div class="heading-mission">
+			<h1 data-aos ="fade-up-right">OUR MISSION</h1>
+		</div>
+		<div class="text-mission">
+			<img data-aos ="fade-right" src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/8dc6158b-290c-4692-878c-6cce95f8b94f.gif" alt="">
+			<div class="mission-details" data-aos="fade-up-left">
+				<h2>FEED A BEETER FUTURE</h2>
+				<span>
+Our mission is to create delicious, nutritious, sustainable protein so that</span>
+<div id="slogan">
+	MAKE
+	<div id="flip">
+		<div><div>WORK</div></div>
+    <div><div>LIFESTYLE</div></div>
+    <div><div>EVERYTHING</div></div>
+  </div>
+  AWESOME!
+</div>
+	
+		<a href="" class="btn-mission">OUR MISSION</a>
+			</div>
+			
+		</div>
+	</section>	
+	<section class="top-selling-products" >
+		
+		<div class="block" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+			<h1>BRING <span>VGMEAT </span>TO YOUR MENU</h1>
+			
+		</div>
+
+		<div class="Vertical-Card-Sliding-Animation" > 
+			<div class="card"  style="--delay:-1;">
+				<div class="content">
+					
+				
+				<div class="img"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/14fbbaa3-9a62-439a-8e50-908487b0b88a.png" alt=""></div>
+				<div class="details">
+						<span> PLANT-BASED CHICKEN</span>
+					</div>
+					</div>
+				<a href="product-detail1.html" title="">View Now</a>	
+				
+			</div>
+			<div class="card" style="--delay:0;">
+				<div class="content">
+					
+			
+				<div class="img"><img src="beef.jpg" alt=""></div>
+				<div class="details">
+						<span> PLANT-BASED BEEF </span>
+					</div>
+					</div>
+				<a href="product-detail.html" title="">View Now</a>	
+				
+			</div>
+			<div class="card" style="--delay:1;">
+				<div class="content">
+					
+				
+				<div class="img"><img src="sausage.jpg" alt=""></div>
+				<div class="details">
+						<span> BREAKFAST SAUSAGE</span>
+					</div>
+					</div>
+				<a href="product-detail1.html" title="">View Now</a>	
+				
+			</div>
+			<div class="card" style="--delay:2;">
+				<div class="content">
+					
+				
+				<div class="img"><img src="meatballs.jpg" alt=""></div>
+				<div class="details">
+						<span> MEATBALLS</span>
+					</div>
+					</div>
+				<a href="product-detail.html" title="">View Now</a>	
+				
+			</div>
+			<div class="card" style="--delay:2;">
+				<div class="content">
+					
+				<div class="ribbon"><span>Hot Deal</span></div>
+					
+				
+				<div class="img"><img src=" burger.jpg" alt=""></div>
+				<div class="details">
+						<span> PLANT-BASED BURGER</span>
+					</div>
+					</div>
+				<a href="product-detail1.html" title="">View Now</a>	
+				
+			</div>
+
+			
+		</div>
+		<div class="footer-slide-card">
+				<a href="shop.html" ><button type="" class="link-product">Shop Now</button></a>
+				<div class="affliate">
+					
+				
+				<p>Already A Partner?</p><a href="foodservice.html" title="">View Our Resources</a></div>
+			</div>
+
+	</section>	
+	
+	
+	<section class="overview-ingredients">
+		<div class="banner-ingredients" data-aos="fade-up"
+     data-aos-duration="3000">
+			<video autoplay muted loop >
+				<source src="video-peas1.mp4" type="video/mp4" media="">
+			</video>
+			<h1>INGREDIENTS</h1>
+		</div>
+		<div class="infor-ingredients">
+			<div class="link-view"  data-aos="fade-right"
+    >
+				<h3>MEAT THAT’S BETTER:</h3>
+				<h2>FOR YOU.<br>THE PLANET.<br>YOUR TASTE BUDS.</h2>
+				<p>NO COMPROMISE REQUIRED.
+				</p>
+				<a href="ingredients.html" ><button type="">View Ingredients</button></a>
+			</div>
+			<div class="imgLink" data-aos="zoom-out-left" >
+
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/72127992-1157-4687-98a3-18b2e34042ee.png" >
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/6ab1c5b1-a500-4d60-bc9c-bf2fc6867e8c.jpeg"  >
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/6a27db1b-6aaf-419d-8c41-75e176e712a8.gif"  >
+			</div>
+		</div>
+	</section>
+	
+
+<section class="all-recipe">
+	<div class="block-recipe">
+			<p data-aos="zoom-in">COOK WITH VGMEAT</p>
+			<h2 data-aos="zoom-out">WAY MORE THAN JUST BURGERS.</h2>
+		</div>	
+	
+	<div class="slider-container">
+		<div class="content-slideshow">
+			<div class="content-carrousel">
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/5156d955-9213-409f-b76c-1dbbab44e0dd.webp" alt="">
+					<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Gio Chay</span>
+						</a>
+						
+					</div>
+				</figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1348de05-4f22-481f-87e4-7b6f37279810.jpeg" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Burger</span>
+						</a>
+						
+					</div>
+						
+					</figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/4157a070-3ad1-4424-b2ce-15944923e660.jpeg" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Sweet Meat</span>
+						</a>
+						
+					
+						
+					</div></figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/2dd85fa7-f6a7-4326-aff5-b3b24fe705c2.png" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Macroon Elote</span>
+						</a>
+						
+					
+						
+					</div></figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/77f4aeb3-f836-4fea-aea2-36cad7b1b9b8.png" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Plant Pizza</span>
+						</a>
+						
+				
+					</div></figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/4157a070-3ad1-4424-b2ce-15944923e660.jpeg" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Xao MeatBalls</span>
+						</a>
+						
+					
+						
+					</div></figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/73c3089e-03ae-40dc-87ab-179d663f9935.png" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Hu tieu chay</span>
+						</a>
+						
+					
+						
+					</div></figure>
+				<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/fc0bb74c-0cc8-46df-9e29-0fa8734d226c.jpeg" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Burger-Vmeat</span>
+						</a>
+						
+					
+						
+					</div></figure>
+					<figure class="shadow"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/96bdcb74-cbf1-47f2-aa80-5399ff559dcd.jpeg" alt="">
+						<div class="nut-recipe">
+						<a href="how-to-cook.html"  >
+							<span class="front-recipe">View Recipe</span>
+							<span class="center-recipe"></span>
+							<span class="back-recipe">Burger</span>
+						</a>
+						
+					
+					</div></figure>
+					
+					
+				
+			</div>
+		</div>
+	</div>
+		<!-- <div class="left-slide">
+			<div  style="background-color:rgb(103, 142, 139);">
+				<h1>MeatBall Gryos</h1>
+				<a href="" title="" class="btn-recipe">View Recipe</a>
+			</div>
+			<div  style="background-color:rgb(103, 142, 139);">
+				<h1>Breakfast Sausage</h1>
+				<a href="" title="" class="btn-recipe">View Recipe</a>
+			</div>
+			<div  style="background-color:rgb(103, 142, 139);">
+				<h1>Elote Burger</h1>
+				<a href="" title=""class="btn-recipe">View Recipe</a>
+			</div>
+			<div  style ="background-color:rgb(103, 142, 139);">
+				<h1>Beef Mediterranean Skewers</h1>
+				<a href="" title="" class="btn-recipe" >View Recipe</a>
+			</div>
+		</div>	
+		<div class="right-slide">
+			<div style="background-image: url('https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/fc0bb74c-0cc8-46df-9e29-0fa8734d226c.jpeg');">
+				
+			</div>
+			<div style="background-image: url('https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1348de05-4f22-481f-87e4-7b6f37279810.jpeg');">
+				
+			</div>
+			<div style="background-image: url('https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/4157a070-3ad1-4424-b2ce-15944923e660.jpeg');">
+						
+			</div>
+			<div style="background-image: url('https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/73c3089e-03ae-40dc-87ab-179d663f9935.png');">
+				
+			</div>
+			
+		</div>
+		<div class="action-buttons">
+			<button class="down-button"><i class="fas fa-arrow-down"></i></button>
+			<button class="up-button"><i class="fas fa-arrow-up"></i></button>
+		</div> -->
+	
+
+	<div class="footer-recipe">
+		<p>Let’s get cooking.</p>
+		<a href="cook.html" ></a><button type="" class="link-product">View All Recipe</button>
+	</div>
+</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script>
+		const sliderContainer = document.querySelector('.slider-container');
+
+		const slideRight = document.querySelector('.right-slide');
+		const slideLeft = document.querySelector('.left-slide');
+
+		const upButton =document.querySelector('.up-button');
+		const downButton = document.querySelector('.down-button');
+		 const slidesLength = slideLeft.querySelectorAll('div').length;
+
+		 let activeSlideIndex = 0;
+		 slideLeft.style.top = `-${(slidesLength -1) * 100}vh`;
+		 upButton.addEventListener('click', () => changeSlide('up'));
+		 downButton.addEventListener('click',() => changeSlide('down'));
+		 const changeSlide = (direction) =>{
+		 	const sliderHeight = sliderContainer.clientHeight;
+		 	if(direction === 'up'){
+		 		activeSlideIndex++;
+		 		if(activeSlideIndex > slidesLength -1){
+		 			activeSlideIndex = 0;
+
+		 		}
+		 	}else if (direction === 'down'){
+		 		activeSlideIndex--;
+		 		if (activeSlideIndex < 0){
+		 			activeSlideIndex = slidesLength - 1;
+		 		}
+		 	}
+		 	slideRight.style.transform =`translateY(-${activeSlideIndex * sliderHeight}px)`;
+		 	slideLeft.style.transform =`translateY(${activeSlideIndex * sliderHeight}px)`;
+		 };
+	</script> -->
+
+	<section class="Partner"  style="background-color:cadetblue;">
+		<div class="left-side-partner" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+			<span >OUR PARTNERS</span>
+			<h2>YOU'RE BUSY. <br> EAT OUT.</h2>
+			<p>Find great restaurants near you.</p>
+			<div class="block-zip">
+				<input type="" name="" placeholder="Enter ZIP" class="zip">
+				<a href="where-to-find.html" title="" class="go" >GO</a>
+			</div>
+		</div>
+
+		<div class="right-side-partner">
+			<div class="cube">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/2eed6ac4-b5cc-4247-a8f0-177e74535575.jpeg" alt="">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/afc78d17-232f-4c58-9335-48088b9a2d08.jpeg" alt="">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/eee8d1ec-80a1-4b09-b35f-2465ec6966c5.jpeg" alt="">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/6fdd4e25-fd2e-412c-b52b-7d6048007186.jpeg" alt="">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/090fd56d-48d2-48b9-9c24-dcaf56e85355.jpeg" alt="">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1fbec611-b520-4731-9324-3de0a2df9518.jpeg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="community">
+		<div class="desc-community">
+		<h5>OUR COMMUNITY</h5>
+		<h1>WE HAVE THE SUPPORT</h1>
+		<h6>The people, places and communities that Go Beyond their own limits.</h6>
+		</div>
+	<div class="swiper community-slider">
+		
+	
+		<div class="profile-community swiper-wrapper">
+			<div class="community-content swiper-slide">
+				<div class="imgProfile">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1c310a34-cdd2-4418-ba03-056ce29f26c1.png" alt="">
+				</div>
+				<div class="infor-people">
+					<h2>Shin SeKi</h2>
+					<span>"What I love most is the effect it has on the environment. I appreciate so much that Plant-Based Meat takes less water to produce. That’s the Future of Protein."</span>
+				</div>
+			</div>
+
+			<div class="community-content swiper-slide">
+				<div class="imgProfile">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/d2e17272-1247-4bc9-83eb-2ab35e11f843.png" alt="">
+				</div>
+				<div class="infor-people">
+					<h2>Ferry Park</h2>
+					<span>"What I love most is the effect it has on the environment. I appreciate so much that Plant-Based Meat takes less water to produce. That’s the Future of Protein."</span>
+				</div>
+			</div>
+
+			<div class="community-content swiper-slide">
+				<div class="imgProfile">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/f9cf54cc-3466-45ad-b1a3-97a3ed021613.png" alt="">
+				</div>
+				<div class="infor-people">
+					<h2>Anh Tuan</h2>
+					<span>"Going vegetarian was one of the simplest and easiest ways for me to minimize my impact… it’s better for my health and better for the world. I think that Beyond Meat is genius."</span>
+				</div>
+			</div>
+
+			<div class="community-content swiper-slide">
+				<div class="imgProfile">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/f9cf54cc-3466-45ad-b1a3-97a3ed021613.png" alt="">
+				</div>
+				<div class="infor-people">
+					<h2>Tuan Anh</h2>
+					<span>"Working out as much as I do, it demands a very specific diet. Beyond Meat is the best thing that I could be a part of and it only helps me better perform as an athlete."</span>
+				</div>
+			</div>
+
+			<div class="community-content swiper-slide">
+				<div class="imgProfile">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/f9cf54cc-3466-45ad-b1a3-97a3ed021613.png" alt="">
+				</div>
+				<div class="infor-people">
+					<h2>Tuan Anh</h2>
+					<span>"Working out as much as I do, it demands a very specific diet. Beyond Meat is the best thing that I could be a part of and it only helps me better perform as an athlete."</span>
+				</div>
+			</div>
+
+			<div class="community-content swiper-slide">
+				<div class="imgProfile">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1c310a34-cdd2-4418-ba03-056ce29f26c1.png" alt="">
+				</div>
+				<div class="infor-people">
+					<h2>Shin SeKi</h2>
+					<span>"What I love most is the effect it has on the environment. I appreciate so much that Plant-Based Meat takes less water to produce. That’s the Future of Protein."</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script>
+		
+		var swiper = new Swiper(".community-slider", {
+      	loop:true,
+        spaceBetween: 20,
+        autoplay:{
+        	delay:7500,
+        	disableOnInteraction: false,
+        },
+        centerSlides: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            
+          },
+          768: {
+            slidesPerView: 2,
+            
+          },
+          1020: {
+            slidesPerView: 3,
+            
+          },
+          
+        },
+      });
+        
+    
+	</script>
+<section class="ask-question">
+		<h1>GOT QUESTIONS? WE GOT <br>ANSWERS.</h1>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide "> 
+					<div class="questionnaire">
+						
+					
+						<h2>What time do I need to order my product to ship out within the same week?</h2>
+						<p>To help ensure your order arrives the same week it was placed, you'll need to place your order by 2pm ET on Wednesday.</p>
+					</div>
+					</div>
+				<div class="swiper-slide "> 
+					<div class="questionnaire">
+					<h2>Where do you ship and when can I expect my order?</h2>
+					<p>We can ship to the 48 contiguous United States, plus Washington D.C.  Most packages will ship Monday - Wednesday, and be sent via UPS 2-day shipping (actual delivery times may vary). </p>
+					</div>
+				</div>
+				<div class="swiper-slide "> 
+					<div class="questionnaire "> 
+					<h2>Is your packaging recyclable?</h2>
+					<p>Yes, the shipping box and insulation are curbside recyclable. Recycling guidelines do vary by location, so please check individual packaging and local guidelines for more information.</p>
+				</div>
+				</div>
+				<div class="swiper-slide "> 
+					<div class="questionnaire ">
+					<h2>HOW MUCH STORAGE SPACE DO I NEED IN MY FREEZER?</h2>
+					<p>Storage space varies based on your order; however, we recommend having at least 11″ x 7″ x 6″ of space in your freezer to store the products.</p>
+				</div>
+				</div>	
+				<div class="swiper-slide ">
+					<div class="questionnaire ">
+					<h2>I AM NOT RECEIVING EMAILS ABOUT MY ORDER. WHO DO I CONTACT?</h2>
+					<p>Emails may be going to your spam folder. Please check your spam folder, and if you still do not see any emails, please contact us at ethanandteam@beyondmeat.com</p>
+				 </div>
+				 </div>	
+				<div class="swiper-slide ">
+					<div class="questionnaire ">
+				<h2>WHAT ARE YOUR PRODUCTS MADE OF?</h2> 
+				<p>Protein, fat, minerals, carbohydrates, and water are the five building blocks of meat. We source these building blocks directly from plants, to create delicious, mouthwatering plant-based meat. Some of these ingredients include pea, brown rice, cocoa butter, calcium, iron and beet juice extract. Please visit our product pages for a full list of ingredients.</p>
+				 </div>	
+			</div>
+				<div class="swiper-slide ">
+					<div class="questionnaire ">
+					<h2>WHAT DOES BEYOND MEAT® TASTE LIKE?</h2>
+					<p>
+						Beyond Meat is designed to have the same taste and texture as animal-based meat, so you can use it in your favorite dishes while feeling good about the choice you’re making for you and the planet. Learn more about all the Beyond Meat products here.
+					</p>
+				 </div>
+				 </div>
+				<div class="swiper-slide ">
+					<div class="questionnaire ">
+					<h2>WHY DO YOU CREATE PLANT-BASED PRODUCTS FROM PLANTS THAT AIM TO REPLICATE MEAT?</h2>
+					<p>Our brand promise is to enable consumers to Eat What You Love™, and in this case juicy, delicious burgers, beef, sausages and more. At Beyond Meat, we believe there is a better way to feed the planet. By shifting from animal to plant-based meat, we can address four growing global issues: human health, climate change, constraints on natural resources, and animal welfare.</p>
+					</div>
+				 </div>
+				</div>
+			</div>
+		
+	</section>
+	
+	<section class="movement">
+		<div class="block">
+			<h1>JOIN THE MOVEMENT</h1>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+		</div>
+		<div class="sign-up">
+			
+			
+			<input type="text" value="" class="email-signup" placeholder="Email">
+	
+			<button type="">Sign Up</button>
+		</div>
+	</section>
+
+	
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	 <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+
+        },
+       loop:true,
+       
+      });
+    </script>
+	<section class="footer">
+		<div class="container-footer">
+			<div class="footer-social">
+				<h3 class="follow-us">Connect with us on social</h3>
+				<ul class="social-links">
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-instagram"></i></span>
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-facebook-f"></i></span>
+
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span><i class="fab fa-youtube"></i></span>
+					</a>
+					</li>
+
+
+				</ul>
+					
+			</div>
+			<div class="footer-company">
+				<h3>OUR COMPANY</h3>
+				<ul>
+					<li><a href="" >Mission</a></li>
+					<li><a href="" >Newsroom</a></li>
+					<li><a href="" >Investors</a></li>
+					<li><a href="" >Join The Team</a></li>
+				</ul>
+			</div>
+			<div class="footer-products">
+				<h3>OUR PRODUCTS</h3>
+				<ul>
+					<li><a href="" >Products</a></li>
+					<li><a href="" >Ingredients</a></li>
+					<li><a href="" >Recipes</a></li>
+					<li><a href="" >Buy</a></li>
+				</ul>
+			</div>
+			<div class="footer-store">
+				<h3>STORES & RESTAURANTS</h3>
+				<ul>
+					<li><a href="" >Sell Our Products</a></li>
+					<li><a href="" >Customer Portal</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li><a href="" >FAQs</a></li>
+					<li><a href="" >Contact us</a></li>
+				</ul>
+			</div>
+			<div class="footer-payment">
+				<h3>PAYMENT</h3>
+				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="footer2">
+		<p class="copyright">© 2021 VGMeat. All Rights Reserved.</p>
+		<p>Terms Of Use</p>
+		<p>Privacy Policy</p>
+		<p>Accessibility Statement</p>
+	</section>
+	<script>
+		window.addEventListener('scroll',function(){
+			var scroll = document.querySelector('.scrollTop');
+			scroll.classList.toggle("active" , window.scrollY > 500)
+		})
+
+		function scrollToTop(){
+			window.scrollTo({
+				top:0,
+				behavior: 'smooth'
+			})
+		}
+	</script>
+	<script>
+		var slideshow = document.getElementById('slideshow');
+		var slides = slideshow.getElementsByTagName('img');
+		var index = 0;
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1 ) % slides.length;
+			slides[index].classList.add('active');
+
+		}
+
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length ;
+			slides[index].classList.add('active');
+		}
+
+
+		var slideshowText = document.getElementById('slideshowText');
+		var slidesText = slideshowText.getElementsByTagName('div');
+		var i = 0;
+		function nextSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i + 1 ) % slidesText.length;
+			slidesText[i].classList.add('active');
+
+		}
+
+		function prevSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i - 1 + slidesText.length) % slidesText.length ;
+			slidesText[i].classList.add('active');
+		}
+	</script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+
+			});
+		});
+	</script>
+	<script>
+		let searchForm = document.querySelector('.search-form');
+		document.querySelector('#search-btn').onclick = () => {
+			searchForm.classList.add('show');
+			shoppingCart.classList.remove('active');
+			
+		}
+		document.querySelector('#close-search').onclick = ()=>{
+			searchForm.classList.remove('show');
+		}
+		
+
+		let shoppingCart = document.querySelector('.shopping-cart');
+		document.querySelector('#cart-btn').onclick = () => {
+			shoppingCart.classList.toggle('active');
+			searchForm.classList.remove('show');
+			
+		}
+		document.querySelector('#close-shopping').onclick =() =>{
+			shoppingCart.classList.remove('active');
+
+		}
+	</script>
+	<script src="suggestions.js" ></script>
+	<script>
+		const searchwrapper = document.querySelector(".search-form");
+		const inputBox = searchwrapper.querySelector("input");
+		const suggBox = searchwrapper.querySelector(".autocom-box");
+
+		inputBox.onkeyup =(e) =>{
+			let userData = e.target.value;
+			let emptyArray = [];
+			if(userData){
+				emptyArray = suggestions.filter((data) =>{
+					return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+				});
+				emptyArray = emptyArray.map((data) =>{
+					return data ='<li>'+ data + '</li>';
+				});
+				console.log(emptyArray);
+				searchwrapper.classList.add("active");
+				showSuggestions(emptyArray);
+				let allList = suggBox.querySelectorAll("li");
+				for (let i = 0; i < allList.length; i++){
+					allList[i].setAttribute("onclick", "select(this)");
+				}
+			}else{
+				searchwrapper.classList.remove("active");
+			}
+		}
+		function select(element){
+			let selectUserData = element.textContent;
+			inputBox.value = selectUserData;
+			searchwrapper.classList.remove("active");
+		}
+		function showSuggestions(list){
+			let listData;
+			if(!list.length){
+				userValue =inputBox.value;
+				listData = '<li>'+ userValue + '</li>';
+			}else{
+				listData = list.join('');
+			}
+			suggBox.innerHTML = listData;	
+		}
+	</script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

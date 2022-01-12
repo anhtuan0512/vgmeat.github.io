@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complete Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<div class="wrap-spinner">
+		<div class="spinner"></div>
+		<div class="spinner"></div>
+		<div class="spinner"></div>
+		<span style="color:#fff" >Loading...</span>	
+		
+	</div>
+	<script>
+		window.onload =function(){
+			setTimeout(function(){
+				var loading = document.getElementsByClassName("wrap-spinner")[0];
+				loading.style.display ="none";
+			}, 4000)
+		}
+	</script>
+	<div class="wrap-cooking" >
+		
+	
+	<header>
+		<div class="logo">
+			<a href="mainpage.html" title=""><img src="	LOGO2.png" alt=""></a>
+		</div>
+		<ul class="menu-header">
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="product.html" title=""><span>Our Products</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list" >
+					<li><a href="" >Burgers</a></li>
+					<li><a href="" >Ground Meat</a></li>
+					<li><a href="" >Sausage</a></li>
+					<li><a href="" >MeatBalls</a></li>
+					<li><a href="" >Chicken</a></li>
+					<li><a href="product.html" >View All</a></li>
+				</ul>
+			</div>	
+			<li><a href="foodservice.html" >Food Service</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="learn.html" title=""><span>Learn</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Mission</a></li>
+					<li><a href="ingredients.html" >Ingredients</a></li>
+					
+				</ul>
+			</div>	
+			<li><a href="cook.html" >Cook</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="buy.html" title=""><span>Buy</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="shop.html" >Shop online</a></li>
+					<li><a href="where-to-find.html" >Where to find</a></li>
+					
+				</ul>
+			</div>	
+		</ul>
+		<div class="icon">
+				<i class="fas fa-bars" id="menu-btn"></i>
+				<i class="fas fa-search " id="search-btn"></i>
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
+			</div>
+
+		<form class="search-form">
+		<input type="search" placeholder="search here..." id="search-box" id="search-box">
+		<label for="search-box" class="fas fa-search"></label>
+	</form>
+	<div class="shopping-cart">
+		<div class="title">
+		<h1>YOUR CART</h1>
+	<i class="fas fa-times" id="close-shopping"></i>
+		</div>
+		<div class="text-center">
+			<span>YOUR CART IS EMPTY</span>
+			<div class="btn-shopping">
+				<a href=""><span>SHOP OUR PRODUCT</span></a>
+			</div>
+		</div>
+		<div class="cartdrawer-footer">
+			<button type="">Checkout</button>
+		</div>
+	</div>
+	</header>
+		<div class="banner-cooking">
+			<div class="left-banner-cooking">
+				<h1>EAT <span>WHAT YOU LOVE</span></h1>
+				<div class="search-recipe">
+					<input type="text" placeholder=" "/>
+					<span></span>
+				</div>
+				<h2>JUMP TO</h2>
+				<div class="quick-search">
+					
+					<a href="" ><div class="jump-name">Sausage</div></a>
+					<a href="" ><div class="jump-name">Burger</div></a>
+					<a href="" ><div class="jump-name">Meatballs</div>	</a>
+					<a href="" ><div class="jump-name">Beef Crumbles</div>	</a>
+					
+				</div>
+			</div> 
+			<div class="imgCooking">
+				<img src="home-img.png" alt="">
+			</div>
+		</div>
+
+			
+		</div>
+	
+		
+	<script>
+		'use strict';
+		var searchRecipe = document.querySelectorAll('.search-recipe input[type="text"]+ span');
+		searchRecipe.forEach(elm =>{
+			elm.addEventListener('click', () => {
+				elm.previousElementSibling.value ='';
+			});
+		});
+	</script>
+
+	<div class="wrap-cook" style="background-color:rgb(204, 185, 131);">
+		<div class="block">
+			<h1>FEATURED RECIPES</h1>
+		</div>
+	
+	<div class="container-flip-card"  >
+		
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1d5c8917-f7a1-45e0-9f1d-96621b36448f.jpeg" alt="">
+			</div >
+			<div class="instruction">
+				<h2> Sausage</h2>
+				<h3> Sausage Pesto Pizza</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/de6d6e8e-3f5a-4b42-95c1-17d692fab822.webp" alt="">
+			</div >
+			<div class="instruction">
+				<h2> Beef VGMEAT</h2>
+				<h3> BEEF BUDDHA BOWLS</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">1</span>
+						<span class="number">10 MIN</span>
+						<span class="number">15 MIN</span>
+					</div>
+				</div>
+			<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/984ad617-7fe6-43e7-aa90-cc33d510ab0a.jpeg" alt="">
+			</div >
+			<div class="instruction">
+				<h2> Burger VGMEAT</h2>
+				<h3> Elote Burger</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+		</div>
+
+
+		<div class="wrap-cook" style="background-color:rgb(71, 29, 14);">
+				<div class="block">
+			<h4> BURGER VGMEAT RECIPES</h4>
+		</div>
+		
+		<div class="container-flip-card" >
+	
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/5156d955-9213-409f-b76c-1dbbab44e0dd.webp" alt="">
+			</div >
+			<div class="instruction">
+				<h2> Sausage VGMEAT</h2>
+				<h3> Sausage Pesto Pizza</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/0c041edc-f67f-473d-ae7f-4a3123c810b8.webp" alt="">
+			</div >
+			<div class="instruction">
+				<h2> BEEF VGMEAT</h2>
+				<h3> BEEF BUDDHA BOWLS</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">1</span>
+						<span class="number">10 MIN</span>
+						<span class="number">15 MIN</span>
+					</div>
+				</div>
+			<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/ba618e51-e679-48ab-a9f9-56aeef4a2681.jpeg" alt="">
+			</div >
+			<div class="instruction">
+				<h2> Burger VGMEAT</h2>
+				<h3> Elote Burger</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+		<div class="wrap-cook" style="background-color:rgb(71, 29, 14);">
+				<div class="block">
+			<h4> MEATBALLS RECIPES</h4>
+		</div>
+		
+		<div class="container-flip-card" >
+	
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/0ec234f0-48a4-4508-8b75-9969fc059f85.jpeg" alt="">
+			</div >
+			<div class="instruction">
+				<h2> MEATBALL VGMEAT</h2>
+				<h3> MeatBall Pesto </h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/fca9932b-3e7b-4f60-a316-dbd8edd2466c.webp" alt="">
+			</div >
+			<div class="instruction">
+				<h2> MEATBALL VGMEAT</h2>
+				<h3> SPAGHETTI SQUASH</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">1</span>
+						<span class="number">10 MIN</span>
+						<span class="number">15 MIN</span>
+					</div>
+				</div>
+			<div class="nut-recipe">
+						<a href="" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/ded1e04f-8a2c-401e-b35e-5c86339d1635.jpeg" alt="">
+			</div >
+			<div class="instruction">
+				<h2> MEATBALL VGMEAT</h2>
+				<h3> MEATBALL GYROS</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+	
+		<div class="wrap-cook" style="background-color:rgb(71, 29, 14);">
+				<div class="block">
+			<h4> SAUSGAE VGMEAT</h4>
+		</div>
+		
+		<div class="container-flip-card" >
+	
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/e2d518d9-df05-4bcb-ad48-a44ee9002bae.jpeg" alt="">
+			</div >
+			<div class="instruction">
+				<h2> BEEF CRUMBLES</h2>
+				<h3>Sausage Pesto Pizza</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">2</span>
+						<span class="number">5 MIN</span>
+						<span class="number">20 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/a82ae1a1-d0f9-4d32-952f-695c6c4cb350.webp" alt="">
+			</div >
+			<div class="instruction">
+				<h2> BEEF CRUMBLES</h2>
+				<h3>SAUSAGE STUFFED PEPPER</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">1</span>
+						<span class="number">10 MIN</span>
+						<span class="number">15 MIN</span>
+					</div>
+				</div>
+			<div class="nut-recipe">
+						<a href="" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+
+		<div class="card-food">
+			<div class="img-food">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/aa8daaf5-ad9a-4ad4-a2d1-30c9e5156789.png" alt="">
+			</div >
+			<div class="instruction">
+				<h2> SAUSAGE VGMEAT</h2>
+				<h3> Sausage white bean soup</h3>
+				<div class="instruction-details">
+					<div class="row1">
+						<span>Serves</span>
+						<span>Prep Time</span>
+						<span>Cook Time</span>	
+					</div>
+					<div class="row2">
+						<span class="number">3</span>
+						<span class="number">6 MIN</span>
+						<span class="number">40 MIN</span>
+					</div>
+
+				</div>
+				<div class="nut-recipe">
+						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+			
+	
+
+
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register(){
+			x.style.left ="-400px";
+			y.style.left ="50px";
+			z.style.left ="110px";
+		}
+		function login(){
+			x.style.left ="50px";
+			y.style.left ="465px";
+			z.style.left="0";
+		}
+	</script>
+
+	<section class="share-recipe" style="background-color:#556d31 !important">
+		<div class="image-Performance">
+			<img src="performance.png" alt="" class="p1">
+			<div class="block-p2">				
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/09676ffa-4be7-4010-bf75-512def4ce09e.png" class="p2" width="100px" height="100px">
+				<h3 style="color:#fff; ">QUICK, EASY , PLAN-BASED AND DELICIOUS</h3>
+					
+				
+			</div>
+		</div>
+		<div class="share-performance">
+			<h1>SHOW US YOUR CHOPS</h1>
+			<p> Share your favorite Plant-Based Meat recipes</p>
+			<div class="btn-share">
+				<span><i class="fas fa-share-alt"></i>Share!</span>
+				<a href="" ><i class="fab fa-facebook-f"></i></a>
+				<a href="" ><i class="fab fa-twitter"></i></a>
+				<a href="" ><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</section>
+	<section class="movement">
+		<div class="block">
+			<h1>JOIN THE MOVEMENT</h1>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+		</div>
+		<div class="sign-up">
+			
+			
+			<input type="text" value="" class="email-signup" placeholder="Email">
+	
+			<button type="">Sign Up</button>
+		</div>
+	</section>
+
+
+	<section class="footer">
+		<div class="container-footer">
+			<div class="footer-social">
+				<h3 class="follow-us">Connect with us on social</h3>
+				<ul class="social-links">
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-instagram"></i></span>
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-facebook-f"></i></span>
+
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span><i class="fab fa-youtube"></i></span>
+					</a>
+					</li>
+
+
+				</ul>
+					
+			</div>
+			<div class="footer-company">
+				<h3>OUR COMPANY</h3>
+				<ul>
+					<li><a href="" >Mission</a></li>
+					<li><a href="" >Newsroom</a></li>
+					<li><a href="" >Investors</a></li>
+					<li><a href="" >Join The Team</a></li>
+				</ul>
+			</div>
+			<div class="footer-products">
+				<h3>OUR PRODUCTS</h3>
+				<ul>
+					<li><a href="" >Products</a></li>
+					<li><a href="" >Ingredients</a></li>
+					<li><a href="" >Recipes</a></li>
+					<li><a href="" >Buy</a></li>
+				</ul>
+			</div>
+			<div class="footer-store">
+				<h3>STORES & RESTAURANTS</h3>
+				<ul>
+					<li><a href="" >Sell Our Products</a></li>
+					<li><a href="" >Customer Portal</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li><a href="" >FAQs</a></li>
+					<li><a href="" >Contact us</a></li>
+				</ul>
+			</div>
+			<div class="footer-payment">
+				<h3>PAYMENT</h3>
+				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="footer2">
+		<p class="copyright">© 2021  VGMeat. All Rights Reserved.</p>
+		<p>Terms Of Use</p>
+		<p>Privacy Policy</p>
+		<p>Accessibility Statement</p>
+	</section>
+
+
+
+	<script>
+		var slideshow = document.getElementById('slideshow');
+		var slides = slideshow.getElementsByTagName('img');
+		var index = 0;
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1 ) % slides.length;
+			slides[index].classList.add('active');
+
+		}
+
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length ;
+			slides[index].classList.add('active');
+		}
+
+
+		var slideshowText = document.getElementById('slideshowText');
+		var slidesText = slideshowText.getElementsByTagName('div');
+		var i = 0;
+		function nextSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i + 1 ) % slidesText.length;
+			slidesText[i].classList.add('active');
+
+		}
+
+		function prevSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i - 1 + slidesText.length) % slidesText.length ;
+			slidesText[i].classList.add('active');
+		}
+	</script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+
+			});
+		});
+	</script>
+	<script>
+		let searchForm = document.querySelector('.search-form');
+		document.querySelector('#search-btn').onclick = () => {
+			searchForm.classList.add('show');
+			shoppingCart.classList.remove('active');
+			
+		}
+		document.querySelector('#close-search').onclick = ()=>{
+			searchForm.classList.remove('show');
+		}
+		
+
+		let shoppingCart = document.querySelector('.shopping-cart');
+		document.querySelector('#cart-btn').onclick = () => {
+			shoppingCart.classList.toggle('active');
+			searchForm.classList.remove('show');
+			
+		}
+		document.querySelector('#close-shopping').onclick =() =>{
+			shoppingCart.classList.remove('active');
+
+		}
+	</script>
+	<script src="suggestions.js" ></script>
+	<script>
+		const searchwrapper = document.querySelector(".search-form");
+		const inputBox = searchwrapper.querySelector("input");
+		const suggBox = searchwrapper.querySelector(".autocom-box");
+
+		inputBox.onkeyup =(e) =>{
+			let userData = e.target.value;
+			let emptyArray = [];
+			if(userData){
+				emptyArray = suggestions.filter((data) =>{
+					return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+				});
+				emptyArray = emptyArray.map((data) =>{
+					return data ='<li>'+ data + '</li>';
+				});
+				console.log(emptyArray);
+				searchwrapper.classList.add("active");
+				showSuggestions(emptyArray);
+				let allList = suggBox.querySelectorAll("li");
+				for (let i = 0; i < allList.length; i++){
+					allList[i].setAttribute("onclick", "select(this)");
+				}
+			}else{
+				searchwrapper.classList.remove("active");
+			}
+		}
+		function select(element){
+			let selectUserData = element.textContent;
+			inputBox.value = selectUserData;
+			searchwrapper.classList.remove("active");
+		}
+		function showSuggestions(list){
+			let listData;
+			if(!list.length){
+				userValue =inputBox.value;
+				listData = '<li>'+ userValue + '</li>';
+			}else{
+				listData = list.join('');
+			}
+			suggBox.innerHTML = listData;	
+		}
+	</script>
+</body>
+</html>

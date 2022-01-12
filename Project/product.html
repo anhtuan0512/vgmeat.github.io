@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complete Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body style="overflow-x:hidden">
+	<section class="preloader3">
+		<div class="cup"></div>
+		<div class="handle"></div>
+	<h1 style="color:#fff;">Please wait to fill cup coffe</h1>
+	</section>
+	<script	>
+		window.onload =function(){
+			setTimeout(function(){
+				var loading = document.getElementsByClassName("preloader3")[0];
+				loading.style.display ="none";
+			}, 4000)
+		}
+	</script>
+
+	<div class="ring">	
+		  <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            	<div class="coccoc-alo-ph-circle"></div>
+           		<div class="coccoc-alo-ph-circle-fill"></div>
+            	<div class="coccoc-alo-ph-img-circle"></div>
+        	</div>
+		
+	</div>	
+	<div class="wrapp-banner">
+		
+	
+	<header>
+		<div class="logo">
+			<a href="mainpage.html" title=""><img src="	LOGO2.png" alt=""></a>
+		</div>
+		<ul class="menu-header">
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="product.html" title=""><span>Our Products</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list" >
+					<li><a href="" >Burgers</a></li>
+					<li><a href="" >Ground Meat</a></li>
+					<li><a href="" >Sausage</a></li>
+					<li><a href="" >MeatBalls</a></li>
+					<li><a href="" >Chicken</a></li>
+					<li><a href="product.html" >View All</a></li>
+				</ul>
+			</div>	
+			<li><a href="foodservice.html" >Food Service</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="learn.html" title=""><span>Learn</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Mission</a></li>
+					<li><a href="ingredients.html" >Ingredients</a></li>
+					
+				</ul>
+			</div>	
+			<li><a href="cook.html" >Cook</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="buy.html" title=""><span>Buy</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="shop.html" >Shop online</a></li>
+					<li><a href="where-to-find.html" >Where to find</a></li>
+					
+				</ul>
+			</div>	
+		</ul>
+		<div class="icon">
+				<i class="fas fa-bars" id="menu-btn"></i>
+				<i class="fas fa-search " id="search-btn"></i>
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
+			</div>
+
+		<div class="wrap-search">
+			
+		
+		<div class="search-form search-input">
+			<div class="fas fa-times" id="close-search"></div>
+				
+		
+			
+				
+			
+		<input type="search" placeholder="search here..." id="search-box" id="search-box">
+		<div class="autocom-box">
+			<li>Burgers
+
+			</li>
+			<li>Ground Meat</li>
+			<li>Sausage</li>
+			<li>MeatBalls</li>
+			<li>Chicken</li>
+
+		</div>
+
+		<a href="product.html" title=""><i class="fas fa-search"></i></a>
+		</div>
+
+	</div>
+	<div class="shopping-cart">
+		<div class="title">
+		<h1>YOUR CART</h1>
+	<i class="fas fa-times" class="close-shopping"></i>
+		</div>
+		<div class="text-center">
+			<span>YOUR CART IS EMPTY</span>
+			<div class="btn-shopping">
+				<a href=""><span>SHOP OUR PRODUCT</span></a>
+			</div>
+		</div>
+		<div class="cartdrawer-footer">
+			<button type="">Checkout</button>
+		</div>
+	</div>
+	</header>
+		<div class="banner-product">
+			<div class="left-side-product">
+				<h2>OUR PRODUCT</h2>
+				<p>Imagine a world where we’ve taken the animal off the table, while still delivering the meaty, plant-based, better-for-you meals you crave. That world is this one, and those meals are Plant-Based Meat.</p>
+				<div class="nut-product">
+						<a href="shop.html" class="nut-link-buy">Shop Now</a>
+						<a href="where-to-find.html" class="find-me">Find Near Me</a>
+						</div>
+			</div>
+			<div class="right-side-product">
+			<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/e605475a-4d27-4cfe-b570-bc856dbb2586.gif" alt=""	>
+			</div>
+
+		</div>
+			<span class="SkewedOne"></span>
+			<span class="SkewedTwo"></span>
+
+	</div>
+
+		<script>
+			const SkewOne = document.querySelector('.SkewedOne');
+			const SkewTwo = document.querySelector('.SkewedTwo');
+			window.addEventListener('scroll', function(){
+				const value1 = -15 + window.scrollY/45;
+				const value2 = 15 + window.scrollY/-45;
+				SkewOne.style.transform= "skewY("+ value1 + "deg)";
+				SkewTwo.style.transform= "skewY("+ value2 + "deg)";
+
+			})
+		</script>
+	
+	
+	
+	<div class="wrap-product-details" >
+		<div class="card-product card-one">
+			<div class="image-product">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/54d7c39a-b01d-4e5b-a574-8f94fd888ebb.jpeg" alt="">
+			</div>
+			<div class="content-products">
+				<h2 class="title">BEYOND BURGER</h2>
+				<span>FIND IT IN THE MEAT AISLE.</span>
+		
+				<div class="bottom bottom-one">
+					<p>This is no mere veggie burger. This is the plant-based burger that’s changing the game. It’ll feed more than your appetite.</p>
+					<div class="nut-product">
+						<a href="product-detail.html" class="nut-link-buy" >Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+						</div>
+				</div>	
+				
+			</div>
+		</div>
+		<div class="card-product card-two">
+			<div class="image-product">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/0fb04c3a-4bfd-4cf3-b670-2b3c6dffc393.jpeg" alt="">
+			</div>
+			<div class="content-products">
+				<h2 class="title">BEYOND BEEF</h2>
+				<span>FIND IT IN THE MEAT AISLE.</span>
+					
+				<div class="bottom bottom-two">
+					<p>This is no mere veggie burger. This is the plant-based burger that’s changing the game. It’ll feed more than your appetite.</p>
+					<div class="nut-product">
+						<a href="product-detail1.html" class="nut-link-buy">Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+
+		<div class="card-product card-three">
+			<div class="image-product">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/96f45c11-41e0-4c30-b3db-82b39d2027a0.jpeg" alt="">
+			</div>
+			<div class="content-products">
+				<h2 class="title">BEYOND SAUSAGE</h2>
+				<span>FIND IT IN THE MEAT AISLE.</span>
+						
+				<div class="bottom bottom-three">
+					<p>This is no mere veggie burger. This is the plant-based burger that’s changing the game. It’ll feed more than your appetite.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+						</div>
+						</div>
+				
+			</div>
+		</div>
+
+		<div class="card-product card-four">
+			<div class="image-product">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/43b4ed72-5a4e-41b0-ac87-aff75cd571e4.jpeg" alt="">
+			</div>
+			<div class="content-products">
+				<h2 class="title">BEYOND MEATBALLS</h2>
+					<span>FIND IT IN THE MEAT AISLE.</span>
+					
+				<div class="bottom bottom-four">
+					<p>Flavorful meatballs that are rolled up and served over spaghetti, on a sub or even straight-up. (We’re not judging.)</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+						</div>
+				</div>	
+				
+			</div>
+		</div>
+
+		<div class="card-product card-five">
+			<div class="image-product">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/db1a5858-bb43-4c5d-b9c7-284481627389.jpeg" alt="">
+			</div>
+			<div class="content-products">
+				<h2 class="title">BEYOND BREAKFAST SAUSAGE</h2>
+					<span>FIND PATTIES IN THE FROZEN SECTION, LINKS IN THE MEAT AISLE.</span>
+				
+				<div class="bottom bottom-five">
+					<p>Start your day with a tough decision: links or patties? Either way, it’s a win-win. For you and the planet.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+						</div>
+				</div>				
+				
+			</div>
+		</div>
+
+		<div class="card-product card-six">
+			<div class="image-product">
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/c2ae45e7-7aa9-4034-8f2d-e08ab2e03902.jpeg" alt="">
+			</div>
+			<div class="content-products">
+				<h2 class="title">COOKOUT CLASSIC</h2>
+				<span>FIND IT IN THE FROZEN SECTION.</span>
+						
+				<div class="bottom bottom-six">
+					<p>Start your day with a tough decision: links or patties? Either way, it’s a win-win. For you and the planet.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+						</div>
+						
+				</div>		
+			</div>
+		</div>
+	</div>
+
+			
+	
+
+	<script>
+		$('.card-product.card-one').hover(function(){
+			if($(this).hasClass("active")){
+				$('.card-product.card-one .bottom.bottom-one').slideUp(function(){
+					$('.card-product.card-one').removeClass("active");
+				});
+			}else{
+				$('.card-product.card-one').addClass("active");
+				$('.card-product.card-one .bottom.bottom-one').stop().slideDown();
+			}
+		});
+
+		$('.card-product.card-two').hover(function(){
+			if($(this).hasClass("active")){
+				$('.card-product.card-two .bottom.bottom-two').slideUp(function(){
+					$('.card-product.card-two').removeClass("active");
+				});
+			}else{
+				$('.card-product.card-two').addClass("active");
+				$('.card-product.card-two .bottom.bottom-two').stop().slideDown();
+			}
+		});
+
+		$('.card-product.card-three').hover(function(){
+			if($(this).hasClass("active")){
+				$('.card-product.card-three .bottom.bottom-three').slideUp(function(){
+					$('.card-product.card-three').removeClass("active");
+				});
+			}else{
+				$('.card-product.card-three').addClass("active");
+				$('.card-product.card-three .bottom.bottom-three').stop().slideDown();
+			}
+		});
+
+		$('.card-product.card-four').hover(function(){
+			if($(this).hasClass("active")){
+				$('.card-product.card-four .bottom.bottom-four').slideUp(function(){
+					$('.card-product.card-four').removeClass("active");
+				});
+			}else{
+				$('.card-product.card-four').addClass("active");
+				$('.card-product.card-four .bottom.bottom-four').stop().slideDown();
+			}
+		});
+
+		$('.card-product.card-five').hover(function(){
+			if($(this).hasClass("active")){
+				$('.card-product.card-five .bottom.bottom-five').slideUp(function(){
+					$('.card-product.card-five').removeClass("active");
+				});
+			}else{
+				$('.card-product.card-five').addClass("active");
+				$('.card-product.card-five .bottom.bottom-five').stop().slideDown();
+			}
+		});
+
+		$('.card-product.card-six').hover(function(){
+			if($(this).hasClass("active")){
+				$('.card-product.card-six .bottom.bottom-six').slideUp(function(){
+					$('.card-product.card-six').removeClass("active");
+				});
+			}else{
+				$('.card-product.card-six').addClass("active");
+				$('.card-product.card-six .bottom.bottom-six').stop().slideDown();
+			}
+		});
+	</script>
+
+	
+	<section class="movement">
+		<div class="block">
+			<h1>JOIN THE MOVEMENT</h1>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+		</div>
+		<div class="sign-up">
+			
+			
+			<input type="text" value="" class="email-signup" placeholder="Email">
+	
+			<button type="">Sign Up</button>
+		</div>
+	</section>
+
+
+	<section class="footer">
+		<div class="container-footer">
+			<div class="footer-social">
+				<h3 class="follow-us">Connect with us on social</h3>
+				<ul class="social-links">
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-instagram"></i></span>
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-facebook-f"></i></span>
+
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span><i class="fab fa-youtube"></i></span>
+					</a>
+					</li>
+
+
+				</ul>
+					
+			</div>
+			<div class="footer-company">
+				<h3>OUR COMPANY</h3>
+				<ul>
+					<li><a href="" >Mission</a></li>
+					<li><a href="" >Newsroom</a></li>
+					<li><a href="" >Investors</a></li>
+					<li><a href="" >Join The Team</a></li>
+				</ul>
+			</div>
+			<div class="footer-products">
+				<h3>OUR PRODUCTS</h3>
+				<ul>
+					<li><a href="" >Products</a></li>
+					<li><a href="" >Ingredients</a></li>
+					<li><a href="" >Recipes</a></li>
+					<li><a href="" >Buy</a></li>
+				</ul>
+			</div>
+			<div class="footer-store">
+				<h3>STORES & RESTAURANTS</h3>
+				<ul>
+					<li><a href="" >Sell Our Products</a></li>
+					<li><a href="" >Customer Portal</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li><a href="" >FAQs</a></li>
+					<li><a href="" >Contact us</a></li>
+				</ul>
+			</div>
+			<div class="footer-payment">
+				<h3>PAYMENT</h3>
+				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="footer2">
+		<p class="copyright">© 2021 VGMeat. All Rights Reserved.</p>
+		<p>Terms Of Use</p>
+		<p>Privacy Policy</p>
+		<p>Accessibility Statement</p>
+	</section>
+
+
+<!-- 
+	<script>
+		var slideshow = document.getElementById('slideshow');
+		var slides = slideshow.getElementsByTagName('img');
+		var index = 0;
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1 ) % slides.length;
+			slides[index].classList.add('active');
+
+		}
+
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length ;
+			slides[index].classList.add('active');
+		}
+
+
+		var slideshowText = document.getElementById('slideshowText');
+		var slidesText = slideshowText.getElementsByTagName('div');
+		var i = 0;
+		function nextSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i + 1 ) % slidesText.length;
+			slidesText[i].classList.add('active');
+
+		}
+
+		function prevSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i - 1 + slidesText.length) % slidesText.length ;
+			slidesText[i].classList.add('active');
+		}
+	</script> -->
+
+
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+
+			});
+		});
+	</script>
+	<script>
+		let searchForm = document.querySelector('.search-form');
+		document.querySelector('#search-btn').onclick = () => {
+			searchForm.classList.add('show');
+			shoppingCart.classList.remove('active');
+			
+		}
+		document.querySelector('#close-search').onclick = ()=>{
+			searchForm.classList.remove('show');
+		}
+		
+
+		let shoppingCart = document.querySelector('.shopping-cart');
+		document.querySelector('#cart-btn').onclick = () => {
+			shoppingCart.classList.toggle('active');
+			searchForm.classList.remove('show');
+			
+		}
+		document.querySelector('#close-shopping').onclick =() =>{
+			shoppingCart.classList.remove('active');
+
+		}
+	</script>
+	<script src="suggestions.js" ></script>
+	<script>
+		const searchwrapper = document.querySelector(".search-form");
+		const inputBox = searchwrapper.querySelector("input");
+		const suggBox = searchwrapper.querySelector(".autocom-box");
+
+		inputBox.onkeyup =(e) =>{
+			let userData = e.target.value;
+			let emptyArray = [];
+			if(userData){
+				emptyArray = suggestions.filter((data) =>{
+					return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+				});
+				emptyArray = emptyArray.map((data) =>{
+					return data ='<li>'+ data + '</li>';
+				});
+				console.log(emptyArray);
+				searchwrapper.classList.add("active");
+				showSuggestions(emptyArray);
+				let allList = suggBox.querySelectorAll("li");
+				for (let i = 0; i < allList.length; i++){
+					allList[i].setAttribute("onclick", "select(this)");
+				}
+			}else{
+				searchwrapper.classList.remove("active");
+			}
+		}
+		function select(element){
+			let selectUserData = element.textContent;
+			inputBox.value = selectUserData;
+			searchwrapper.classList.remove("active");
+		}
+		function showSuggestions(list){
+			let listData;
+			if(!list.length){
+				userValue =inputBox.value;
+				listData = '<li>'+ userValue + '</li>';
+			}else{
+				listData = list.join('');
+			}
+			suggBox.innerHTML = listData;	
+		}
+	</script>
+</body>
+</html>

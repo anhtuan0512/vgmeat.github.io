@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complete Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	
+		
+	
+	<header>
+		<div class="logo">
+			<a href="mainpage.html" title=""><img src="LOGO2.png" alt=""></a>
+		</div>
+		<ul class="menu-header">
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="product.html" title=""><span>Our Products</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list" >
+					<li><a href="" >Burgers</a></li>
+					<li><a href="" >Ground Meat</a></li>
+					<li><a href="" >Sausage</a></li>
+					<li><a href="" >MeatBalls</a></li>
+					<li><a href="" >Chicken</a></li>
+					<li><a href="product.html" >View All</a></li>
+				</ul>
+			</div>	
+			<li><a href="foodservice.html" >Food Service</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="learn.html" title=""><span>Learn</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Mission</a></li>
+					<li><a href="ingredients.html" >Ingredients</a></li>
+					
+				</ul>
+			</div>	
+			<li><a href="cook.html" >Cook</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="buy.html" title=""><span>Buy</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="shop.html" >Shop online</a></li>
+					<li><a href="where-to-find.html" >Where to find</a></li>
+					
+				</ul>
+			</div>	
+		</ul>
+		<div class="icon">
+				<i class="fas fa-bars" id="menu-btn"></i>
+				<i class="fas fa-search " id="search-btn"></i>
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
+			</div>
+
+		<div class="wrap-search">
+			
+		
+		<div class="search-form search-input">
+			<div class="fas fa-times" id="close-search"></div>
+				
+		
+			
+				
+			
+		<input type="search" placeholder="search here..." id="search-box" id="search-box">
+		<div class="autocom-box">
+			<li>Burgers
+
+			</li>
+			<li>Ground Meat</li>
+			<li>Sausage</li>
+			<li>MeatBalls</li>
+			<li>Chicken</li>
+
+		</div>
+
+		<a href="product.html" title=""><i class="fas fa-search"></i></a>
+		</div>
+
+	</div>
+	<div class="shopping-cart">
+		<div class="title">
+		<h1>YOUR CART</h1>
+	<i class="fas fa-times" id="close-shopping"></i>
+		</div>
+		<div class="text-center">
+			<span>YOUR CART IS EMPTY</span>
+			<div class="btn-shopping">
+				<a href=""><span>SHOP OUR PRODUCT</span></a>
+			</div>
+		</div>
+		<div class="cartdrawer-footer">
+			<button type="">Checkout</button>
+		</div>
+	</div>
+	</header>
+		
+	<section class="account">
+		<div class="container-account">
+			<div class="user signinBx">
+				<div class="imgAvatar">
+					<img src="https://media.istockphoto.com/photos/modern-keyboard-wih-blue-log-in-button-picture-id638149354?b=1&k=20&m=638149354&s=170667a&w=0&h=K_dd1EuWBMmyU0A5IN4igEUROFozhvtj7CtJ0GswHLE=" alt="">
+				</div>
+				<div class="formBx">
+					<form >
+						<h2>SIGN IN</h2>
+						<input type="text" placeholder ="Username">
+						<input type="password" placeholder ="Password">
+						<input type="submit" value ="login">
+						<p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign up</a></p>
+					</form>
+				</div>
+			</div>	
+
+			<div class="user signupBx">
+				
+				<div class="formBx">
+					<form >
+						<h2>CREATE AN ACCOUNT</h2>
+						<input type="text" placeholder ="Username">
+						<input type="text" placeholder ="Email Address">
+						<small></small>
+						<input type="password" placeholder ="Create Password">
+						<input type="password" placeholder ="Confirm Password">
+						<input type="submit" value ="sign up">
+						<p class="signup">Already have an account<a href="#" onclick="toggleForm();">Sign in</a></p>
+					</form>
+				</div>
+				<div class="imgAvatar">
+					<img src="https://media.istockphoto.com/photos/fingerprint-biometric-authentication-button-digital-security-concept-picture-id1299730469?b=1&k=20&m=1299730469&s=170667a&w=0&h=w-vAa1MLy__YKtTR41J5ollZjdW0oe9lOmAMdwbwrFg=" alt="">
+				</div>
+			</div>			
+		</div>		
+	</section>
+	
+		
+			
+		
+
+
+	<script>
+		function toggleForm(){
+			section = document.querySelector('.account')
+			container = document.querySelector('.container-account');
+			container.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+	</script>
+
+	
+	<section class="movement">
+		<div class="block">
+			<h1>JOIN THE MOVEMENT</h1>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+		</div>
+		<div class="sign-up">
+			
+			
+			<input type="text" value="" class="email-signup" placeholder="Email">
+	
+			<button type="">Sign Up</button>
+		</div>
+	</section>
+
+
+	<section class="footer">
+		<div class="container-footer">
+			<div class="footer-social">
+				<h3 class="follow-us">Connect with us on social</h3>
+				<ul class="social-links">
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-instagram"></i></span>
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-facebook-f"></i></span>
+
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span><i class="fab fa-youtube"></i></span>
+					</a>
+					</li>
+
+
+				</ul>
+					
+			</div>
+			<div class="footer-company">
+				<h3>OUR COMPANY</h3>
+				<ul>
+					<li><a href="" >Mission</a></li>
+					<li><a href="" >Newsroom</a></li>
+					<li><a href="" >Investors</a></li>
+					<li><a href="" >Join The Team</a></li>
+				</ul>
+			</div>
+			<div class="footer-products">
+				<h3>OUR PRODUCTS</h3>
+				<ul>
+					<li><a href="" >Products</a></li>
+					<li><a href="" >Ingredients</a></li>
+					<li><a href="" >Recipes</a></li>
+					<li><a href="" >Buy</a></li>
+				</ul>
+			</div>
+			<div class="footer-store">
+				<h3>STORES & RESTAURANTS</h3>
+				<ul>
+					<li><a href="" >Sell Our Products</a></li>
+					<li><a href="" >Customer Portal</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li><a href="" >FAQs</a></li>
+					<li><a href="" >Contact us</a></li>
+				</ul>
+			</div>
+			<div class="footer-payment">
+				<h3>PAYMENT</h3>
+				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
+			</div>
+
+		
+		</div>
+
+			
+			
+	</section>
+	<section class="footer2">
+		<p class="copyright">© 2021 VGMeat. All Rights Reserved.</p>
+		<p>Terms Of Use</p>
+		<p>Privacy Policy</p>
+		<p>Accessibility Statement</p>
+	</section>
+
+
+
+	<script>
+		var slideshow = document.getElementById('slideshow');
+		var slides = slideshow.getElementsByTagName('img');
+		var index = 0;
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1 ) % slides.length;
+			slides[index].classList.add('active');
+
+		}
+
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length ;
+			slides[index].classList.add('active');
+		}
+
+
+		var slideshowText = document.getElementById('slideshowText');
+		var slidesText = slideshowText.getElementsByTagName('div');
+		var i = 0;
+		function nextSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i + 1 ) % slidesText.length;
+			slidesText[i].classList.add('active');
+
+		}
+
+		function prevSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i - 1 + slidesText.length) % slidesText.length ;
+			slidesText[i].classList.add('active');
+		}
+	</script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+
+			});
+		});
+	</script>
+	<script>
+		let searchForm = document.querySelector('.search-form');
+		document.querySelector('#search-btn').onclick = () => {
+			searchForm.classList.add('show');
+			shoppingCart.classList.remove('active');
+			
+		}
+		document.querySelector('#close-search').onclick = ()=>{
+			searchForm.classList.remove('show');
+		}
+		
+
+		let shoppingCart = document.querySelector('.shopping-cart');
+		document.querySelector('#cart-btn').onclick = () => {
+			shoppingCart.classList.toggle('active');
+			searchForm.classList.remove('show');
+			
+		}
+		document.querySelector('#close-shopping').onclick =() =>{
+			shoppingCart.classList.remove('active');
+
+		}
+	</script>
+	<script src="suggestions.js" ></script>
+	<script>
+		const searchwrapper = document.querySelector(".search-form");
+		const inputBox = searchwrapper.querySelector("input");
+		const suggBox = searchwrapper.querySelector(".autocom-box");
+
+		inputBox.onkeyup =(e) =>{
+			let userData = e.target.value;
+			let emptyArray = [];
+			if(userData){
+				emptyArray = suggestions.filter((data) =>{
+					return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+				});
+				emptyArray = emptyArray.map((data) =>{
+					return data ='<li>'+ data + '</li>';
+				});
+				console.log(emptyArray);
+				searchwrapper.classList.add("active");
+				showSuggestions(emptyArray);
+				let allList = suggBox.querySelectorAll("li");
+				for (let i = 0; i < allList.length; i++){
+					allList[i].setAttribute("onclick", "select(this)");
+				}
+			}else{
+				searchwrapper.classList.remove("active");
+			}
+		}
+		function select(element){
+			let selectUserData = element.textContent;
+			inputBox.value = selectUserData;
+			searchwrapper.classList.remove("active");
+		}
+		function showSuggestions(list){
+			let listData;
+			if(!list.length){
+				userValue =inputBox.value;
+				listData = '<li>'+ userValue + '</li>';
+			}else{
+				listData = list.join('');
+			}
+			suggBox.innerHTML = listData;	
+		}
+	</script>
+</body>
+</html>

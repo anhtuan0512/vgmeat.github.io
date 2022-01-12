@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complete Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="jarallax.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+</head>
+<body  style="overflow-x:hidden;">
+	
+	<section class="wrap-preloader2">					
+		<div class="preloader2">
+			<span style="--i:1;"></span>
+			<span style="--i:2;"></span>
+			<span style="--i:3;"></span>
+			<span style="--i:4;"></span>
+			<span style="--i:5;"></span>
+			<span style="--i:6;"></span>
+			<span style="--i:7;"></span>
+			<span style="--i:8;"></span>
+			<span style="--i:9;"></span>
+			<span style="--i:10;"></span>
+			<span style="--i:11;"></span>
+			<span style="--i:12;"></span>
+			<span style="--i:13;"></span>
+			<span style="--i:14;"></span>
+			<span style="--i:15;"></span>
+			<span style="--i:16;"></span>
+			<span style="--i:17;"></span>
+			<span style="--i:18;"></span>
+			<span style="--i:19;"></span>
+			<span style="--i:20;"></span>
+			<div class="rocket"></div>		
+						
+				
+		</div>
+	</section>
+
+	<script>
+		$(document).ready(function(){
+			window.onload =function(){
+			setTimeout(function(){
+				var loading = document.getElementsByClassName("wrap-preloader2")[0];
+				loading.style.display ="none";
+			}, 4000)
+		}
+		})
+	</script>
+	<div class="wrap-ingredients" style="background-color:rgb(26, 82, 53);">
+		
+	
+	
+	<header class="header2"  >
+		<div class="logo">
+			<a href="mainpage.html" title=""><img src="	LOGO2.png" alt=""></a>
+		</div>
+		<ul class="menu-header">
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="product.html" title=""><span>Our Products</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list" >
+					<li><a href="" >Burgers</a></li>
+					<li><a href="" >Ground Meat</a></li>
+					<li><a href="" >Sausage</a></li>
+					<li><a href="" >MeatBalls</a></li>
+					<li><a href="" >Chicken</a></li>
+					<li><a href="product.html" >View All</a></li>
+				</ul>
+			</div>	
+			<li><a href="foodservice.html" >Food Service</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="learn.html" title=""><span>Learn</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Mission</a></li>
+					<li><a href="" >Ingredients</a></li>
+					
+				</ul>
+			</div>	
+			<li><a href="cook.html" >Cook</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="buy.html" title=""><span>Buy</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Shop online</a></li>
+					<li><a href="where-to-find.html" >Where to find</a></li>
+					
+				</ul>
+			</div>	
+		</ul>
+		<div class="icon">
+				<i class="fas fa-bars" id="menu-btn"></i>
+				<i class="fas fa-search " id="search-btn"></i>
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
+			</div>
+			<div class="wrap-search">
+			
+		
+		<div class="search-form search-input">
+			<div class="fas fa-times" id="close-search"></div>
+				
+		
+			
+				
+			
+		<input type="search" placeholder="search here..." id="search-box" id="search-box">
+		<div class="autocom-box">
+			<li>Burgers
+
+			</li>
+			<li>Ground Meat</li>
+			<li>Sausage</li>
+			<li>MeatBalls</li>
+			<li>Chicken</li>
+
+		</div>
+
+		<a href="product.html" title=""><i class="fas fa-search"></i></a>
+		</div>
+		</div>
+	
+	<div class="shopping-cart">
+		<div class="title">
+		<h1>YOUR CART</h1>
+	<i class="fas fa-times" id="close-shopping"></i>
+		</div>
+		<div class="text-center">
+			<span>YOUR CART IS EMPTY</span>
+			<div class="btn-shopping">
+				<a href=""><span>SHOP OUR PRODUCT</span></a>
+			</div>
+		</div>
+		<div class="cartdrawer-footer">
+			<button type="">Checkout</button>
+		</div>
+	</div>
+
+	</header>
+
+	<h1>YES, IT'S MEAT</h1>
+		<h2>MADE FROM PLANTS</h2>
+		<p>Made up of five key components, this delectable, better-for-you option <br>gives you the meaty experience you crave without compromise.</p>
+
+		<div class="scrolldown">
+			<span></span>
+				<span></span>
+					<span></span>
+				
+		</div>
+	</div>
+	<section class="parrallax-effect">
+		<img src="https://www.beyondmeat.com/static/burger_top-3677f35291a10693e661c6ef63426ed2.png" data-speed="-5" class="layer">
+	<img src="https://www.beyondmeat.com/static/green-2ab0b0170ac0223f1641d662df5ed9f8.png" alt=""
+	data-speed="5" class="layer"
+	>
+		
+			
+	<img src="https://www.beyondmeat.com/static/coconut-580a9f0e00ffac16dbf6fba627a3b870.png" alt="" data-speed="2" class="layer"
+	> 
+			
+		
+	<img src="https://www.beyondmeat.com/static/potato-5d3c10021317667b4d4e42ec95538d70.png" alt="" data-speed="6" class="layer">
+		
+			
+	<img src="https://www.beyondmeat.com/static/onion-b95b12c5ae8b640680d02d920e85df92.png" alt="" data-speed="8" class="layer">
+			
+			
+	<img src="https://www.beyondmeat.com/static/stick-f382b41e4db11e3e87c7620b9f839f3a.png" alt="" data-speed="-2" class="layer">
+
+	<img src="https://www.beyondmeat.com/static/burger_bottom-60d79a3ae82220da09ee70332b622438.png" alt="" class="layer" data-speed="4">
+			
+	<h2 class="layer" data-speed="2">INGREDIENTS</h2>
+		
+	</section>
+	<script>
+		document.addEventListener("mousemove" , parallax);
+		function parallax(e){
+			this.querySelectorAll('.layer').forEach(layer =>{
+				const speed = layer.getAttribute('data-speed')
+
+				const x =(window.innerWidth - e.pageX*speed)/100
+				const y =(window.innerHeight - e.pageY*speed)/100
+				layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+			})
+		}
+	</script>
+	<section class="view-ingredients">
+		<div class="container-ingredients">
+			<div class="box-ingredients">
+
+				<h2 data-jarallax-element ="0 -200">PROTEIN</h2>
+				<div class="ingredients-details">
+					<div class="imgIngredients">
+						
+					
+					<img src="https://media.istockphoto.com/photos/green-peas-in-pods-growing-in-summer-garden-picture-id1202459819?b=1&k=20&m=1202459819&s=170667a&w=0&h=b1-U8i5odbGmMISLD30_I6mqhkL1YRKxPjx7__PR3LQ=" alt="" class="jarallax-img"></div>
+					<div class="content-ingredients" data-jarallax-element ="-200 0">
+						<h4>PLANT PROTEIN MAKES MUSCLES.</h4>
+						<p>Peas, mung beans, faba beans and brown rice team up to give you equal or greater protein than animal-based meat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="view-ingredients">
+		<div class="container-ingredients">
+			<div class="box-ingredients">
+
+				<h2 data-jarallax-element ="0 200">FATS</h2>
+				<div class="ingredients-details">
+					<div class="imgIngredients">
+						
+					
+					<img src="https://media.istockphoto.com/photos/coconut-with-half-and-leaves-on-white-background-picture-id543564492?b=1&k=20&m=543564492&s=170667a&w=0&h=SbF8URffHeuN71dH44U9h0RFAMfm5LPm0u9TrRz3RE4=" alt="" class="jarallax-img"></div>
+					<div class="content-ingredients" data-jarallax-element ="-200 0">
+						<h4>THE KINDS OF FAT YOU’LL LOVE.</h4>
+						<p>That plant-based sizzle is all thanks to our fats, including cocoa butter, coconut oil and expeller-pressed canola oil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="view-ingredients">
+		<div class="container-ingredients">
+			<div class="box-ingredients">
+
+				<h2 data-jarallax-element ="0 -200">CARBS</h2>
+				<div class="ingredients-details">
+					<div class="imgIngredients">
+						
+					
+					<img src="https://media.istockphoto.com/photos/organic-white-potato-starch-picture-id1310169023?b=1&k=20&m=1310169023&s=170667a&w=0&h=ZgE-VMFeeXPWypzbz-tOd87mxoNzfvCAfSU8-DSaovc="></div>
+					<div class="content-ingredients" data-jarallax-element ="-200 0">
+						<h4>YOU’VE NEVER SEEN POTATOES LIKE THIS.</h4>
+						<p>Potato starch and methylcellulose (a plant fiber derivative) give you that delicious bite – literally. They’re responsible for texture.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="view-ingredients">
+		<div class="container-ingredients">
+			<div class="box-ingredients">
+
+				<h2 data-jarallax-element ="0 200">MINERALS</h2>
+				<div class="ingredients-details">
+					<div class="imgIngredients">
+						
+					
+					<img src="https://images.unsplash.com/photo-1616450121126-7c0b5e157524?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1pbmVyYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"></div>
+					<div class="content-ingredients" data-jarallax-element ="-200 0">
+						<h4>THANKS, MOTHER EARTH.</h4>
+						<p>Did someone say nutrients? Oh, wait. We did – with a healthy heaping of calcium, iron, salt and potassium chloride, these minerals deliver the nutrients we expect from meat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="view-ingredients">
+		<div class="container-ingredients">
+			<div class="box-ingredients">
+
+				<h2 data-jarallax-element ="0 -200">FLAVORS</h2>
+				<div class="ingredients-details">
+					<div class="imgIngredients">
+						
+					
+					<img src="https://media.istockphoto.com/photos/beets-picture-id182175899?b=1&k=20&m=182175899&s=170667a&w=0&h=8eoNLW5gg7zXc37C8z1k766cSXNS1GC11Spm-IvpUfk="></div>
+					<div class="content-ingredients" data-jarallax-element ="-200 0">
+						<h4>FOR THE LOOK & TASTE YOU LOVE.</h4>
+						<p>We use things like beet juice and apple extract in our plant-based burgers to give them that meat-like color and taste you know.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<script	src="jarallax.js"></script>
+		<script	src="jarallax-element.js"></script>
+
+	<script	>
+		jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.5
+});
+	</script>
+
+	<section class="bonus-buy" style="background-color:rgb(122, 56, 24);">
+		<div class="block-buy">
+			<h1>You've seen the ingredients.It's time to taste the ingredients</h1>
+		</div>
+
+		<div class="slider owl-carousel">
+			<div class="card-bonus">
+				<div class="image-bonus"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1768da07-a2b1-44bb-8a56-a0c2f95be780.png" alt=""></div>
+				<div class="content-bonus">
+					<h2> VGMEAT BURGER</h2>	
+					<p>Plant-based Burgers that changed the game</p>
+				</div>	
+				<div class="nut-product">
+						<a href="product-detail.html" class="nut-link-buy" >Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+				</div>
+				
+			</div>
+
+			<div class="card-bonus">
+				<div class="image-bonus"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/e8fdfd77-297d-4257-b166-d38a0593d8e0.png" alt=""></div>
+				<div class="content-bonus">
+					<h2> VGMEAT SAUSAGE</h2>	
+					<p>Juicy, meaty & totally plant-based</p>
+				</div>	
+				<div class="nut-product">
+						<a href="product-detail.html" class="nut-link-buy" >Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+				</div>
+				
+			</div>
+
+			<div class="card-bonus">
+				<div class="image-bonus"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/e8d65b81-04e0-49e5-a7e4-511a41ad2b54.png" alt=""></div>
+				<div class="content-bonus">
+					<h2> VGMEAT CHICKEN</h2>	
+					<p>Plant-based and perfect for breakfast</p>
+				</div>	
+				<div class="nut-product">
+						<a href="product-detail.html" class="nut-link-buy" >Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+				</div>
+				
+			</div>
+		
+
+			<div class="card-bonus">
+				<div class="image-bonus"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/f720e3e5-b61e-43b1-85fa-616bc3424d42.png" alt=""></div>
+				<div class="content-bonus">
+					<h2> VGMEAT BEEF</h2>	
+					<p>It’ll feed more than your appetite.</p>
+				</div>	
+				<div class="nut-product">
+						<a href="product-detail.html" class="nut-link-buy" >Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+				</div>
+				
+			</div>
+		
+			<div class="card-bonus">
+				<div class="image-bonus"><img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/8fe81b3b-73a6-4857-96de-80fa944567e1.png" alt=""></div>
+				<div class="content-bonus">
+					<h2> VGMEAT MEATBALLS</h2>	
+					<p>Hearty deliciousness for every meal</p>
+				</div>	
+				<div class="nut-product">
+						<a href="product-detail.html" class="nut-link-buy" >Product Details</a>
+						<a href="" class="find-me">Find Near Me</a>
+				</div>
+				
+			</div>
+
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		$(".slider").owlCarousel({
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:2000,
+			autoplayHoverPause: true,
+		});
+	</script>
+
+	<section class="movement">
+		<div class="block">
+			<h1>JOIN THE MOVEMENT</h1>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+		</div>
+		<div class="sign-up">
+			
+			
+			<input type="text" value="" class="email-signup" placeholder="Email">
+	
+			<button type="">Sign Up</button>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container-footer">
+			<div class="footer-social">
+				<h3 class="follow-us">Connect with us on social</h3>
+				<ul class="social-links">
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-instagram"></i></span>
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-facebook-f"></i></span>
+
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span><i class="fab fa-youtube"></i></span>
+					</a>
+					</li>
+
+
+				</ul>
+					
+			</div>
+			<div class="footer-company">
+				<h3>OUR COMPANY</h3>
+				<ul>
+					<li><a href="" >Mission</a></li>
+					<li><a href="" >Newsroom</a></li>
+					<li><a href="" >Investors</a></li>
+					<li><a href="" >Join The Team</a></li>
+				</ul>
+			</div>
+			<div class="footer-products">
+				<h3>OUR PRODUCTS</h3>
+				<ul>
+					<li><a href="" >Products</a></li>
+					<li><a href="" >Ingredients</a></li>
+					<li><a href="" >Recipes</a></li>
+					<li><a href="" >Buy</a></li>
+				</ul>
+			</div>
+			<div class="footer-store">
+				<h3>STORES & RESTAURANTS</h3>
+				<ul>
+					<li><a href="" >Sell Our Products</a></li>
+					<li><a href="" >Customer Portal</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li><a href="" >FAQs</a></li>
+					<li><a href="" >Contact us</a></li>
+				</ul>
+			</div>
+			<div class="footer-payment">
+				<h3>PAYMENT</h3>
+				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="footer2">
+		<p class="copyright">© 2021 VGMeat. All Rights Reserved.</p>
+		<p>Terms Of Use</p>
+		<p>Privacy Policy</p>
+		<p>Accessibility Statement</p>
+	</section>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+
+			});
+		});
+	</script>
+	<script>
+		let searchForm = document.querySelector('.search-form');
+		document.querySelector('#search-btn').onclick = () => {
+			searchForm.classList.add('show');
+			shoppingCart.classList.remove('active');
+			
+		}
+		document.querySelector('#close-search').onclick = ()=>{
+			searchForm.classList.remove('show');
+		}
+		
+
+		let shoppingCart = document.querySelector('.shopping-cart');
+		document.querySelector('#cart-btn').onclick = () => {
+			shoppingCart.classList.toggle('active');
+			searchForm.classList.remove('show');
+			
+		}
+		document.querySelector('#close-shopping').onclick =() =>{
+			shoppingCart.classList.remove('active');
+
+		}
+	</script>
+	<script src="suggestions.js" ></script>
+	<script>
+		const searchwrapper = document.querySelector(".search-form");
+		const inputBox = searchwrapper.querySelector("input");
+		const suggBox = searchwrapper.querySelector(".autocom-box");
+
+		inputBox.onkeyup =(e) =>{
+			let userData = e.target.value;
+			let emptyArray = [];
+			if(userData){
+				emptyArray = suggestions.filter((data) =>{
+					return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+				});
+				emptyArray = emptyArray.map((data) =>{
+					return data ='<li>'+ data + '</li>';
+				});
+				console.log(emptyArray);
+				searchwrapper.classList.add("active");
+				showSuggestions(emptyArray);
+				let allList = suggBox.querySelectorAll("li");
+				for (let i = 0; i < allList.length; i++){
+					allList[i].setAttribute("onclick", "select(this)");
+				}
+			}else{
+				searchwrapper.classList.remove("active");
+			}
+		}
+		function select(element){
+			let selectUserData = element.textContent;
+			inputBox.value = selectUserData;
+			searchwrapper.classList.remove("active");
+		}
+		function showSuggestions(list){
+			let listData;
+			if(!list.length){
+				userValue =inputBox.value;
+				listData = '<li>'+ userValue + '</li>';
+			}else{
+				listData = list.join('');
+			}
+			suggBox.innerHTML = listData;	
+		}
+	</script>
+	
+	
+
+
+
+
+
+
+</body>
+</html>

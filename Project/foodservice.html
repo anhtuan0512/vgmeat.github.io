@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complete Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<div class="wrap-loader">
+		
+		<div class="loading">
+		<span style="--i:1;"></span>
+		<span style="--i:2;"></span>
+		<span style="--i:3;"></span>
+		<span style="--i:4;"></span>
+		<span style="--i:5;"></span>
+		<span style="--i:6;"></span>
+		<span style="--i:7;"></span>
+	</div>
+	</div>
+
+	<svg>
+		<filter id ="gooey">
+			<feGaussianBlur in ="SourceGraphic" stdDeviation ="10"/>
+			<feColorMatrix values ="
+			1 0 0 0 0
+			0 1 0 0 0
+			0 0 1 0 0
+			0 0 0 20 -10 "/>
+		</filter>
+	</svg>
+	<script>
+		window.onload =function(){
+			setTimeout(function(){
+				var loading = document.getElementsByClassName("wrap-loader")[0];
+				loading.style.display ="none";
+			}, 4000)
+		}
+	</script>
+	<div class="ring">	
+		  <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            	<div class="coccoc-alo-ph-circle"></div>
+           		<div class="coccoc-alo-ph-circle-fill"></div>
+            	<div class="coccoc-alo-ph-img-circle"></div>
+        	</div>
+		
+	</div>	
+	<div class=" wrap-service">
+		<div class="bg">
+				
+			</div>	
+	
+	<header>
+		<div class="logo">
+			<a href="mainpage.html"><img src="	LOGO2.png" alt=""></a>
+		</div>
+		<ul class="menu-header">
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="product.html" title=""><span>Our Products</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list" >
+					<li><a href="" >Burgers</a></li>
+					<li><a href="" >Ground Meat</a></li>
+					<li><a href="" >Sausage</a></li>
+					<li><a href="" >MeatBalls</a></li>
+					<li><a href="" >Chicken</a></li>
+					<li><a href="product.html" >View All</a></li>
+				</ul>
+			</div>	
+			<li><a href="foodservice.html" >Food Service</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="learn.html" title=""><span>Learn</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="learn.html" >Mission</a></li>
+					<li><a href="ingredients.html" >Ingredients</a></li>
+					
+				</ul>
+			</div>	
+			<li><a href="cook.html" >Cook</a></li>
+			<div class="dropdown">
+						
+			<div class="dropdown-select">
+			<a href="buy.html" title=""><span>Buy</span></a>
+						<i class="fa fa-caret-down"></i>				
+						</div>			
+			
+
+				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="shop.html" >Shop online</a></li>
+					<li><a href="" >Where to find</a></li>
+					
+				</ul>
+			</div>	
+		</ul>
+		<div class="icon">
+				<i class="fas fa-bars" id="menu-btn"></i>
+				<i class="fas fa-search " id="search-btn"></i>
+				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
+			</div>
+		<div class="wrap-search">
+			
+		
+		<div class="search-form search-input">
+			<div class="fas fa-times" id="close-search"></div>
+				
+		
+			
+				
+			
+		<input type="search" placeholder="search here..." id="search-box" id="search-box">
+		<div class="autocom-box">
+			<li>Burgers
+
+			</li>
+			<li>Ground Meat</li>
+			<li>Sausage</li>
+			<li>MeatBalls</li>
+			<li>Chicken</li>
+
+		</div>
+
+		<a href="product.html" title=""><i class="fas fa-search"></i></a>
+		</div>
+
+	</div>
+	
+	<div class="shopping-cart">
+		<div class="title">
+		<h1>YOUR CART</h1>
+	<i class="fas fa-times" id="close-shopping"></i>
+		</div>
+		<div class="text-center">
+			<span>YOUR CART IS EMPTY</span>
+			<div class="btn-shopping" id="close-shopping">
+				<a href=""><span>SHOP OUR PRODUCT</span></a>
+			</div>
+		</div>
+		<div class="cartdrawer-footer">
+			<button type="">Checkout</button>
+		</div>
+	</div>
+	</header>
+		<div class="container-service">
+			<div class="banner-inner">
+				<h2>The Finest Ingredients for taste better</h2>
+				<p>Patrick Brown believes Impossible “delivers everything that is of value of meat for consumers” without having to source it from actual animals.</p>
+			</div>	
+
+			<div class="banner-inner text-right">
+				<h2>Modern Recipes Greatly Taste Food</h2>
+				<p> the soy-based hemoglobin that gives the products its iron-rich meat-like bleeding quality</p>
+			</div>
+		</div>
+	
+		<div class="box-main-wrapper">
+			<div class="bg-color-1" id="1b">
+				<div class="box">
+					<img src="pizza.png" alt="" class="left">
+				</div>
+			</div>
+
+			<div class="bg-color-2" id="2b">
+				<div class="box">
+					<img src="pizza-right.png" alt="" class="right">
+				</div>
+			</div>
+		</div>
+		
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script>
+		
+		$(document).ready(function(){
+			$('#1b').hover(function(){
+				$('#2b').addClass('blur');
+			}, function(){
+				$('#2b').removeClass('blur');
+			});
+
+			$('#2b').hover(function(){
+				$('#1b').addClass('blur');
+			}, function(){
+				$('#1b').removeClass('blur');
+			});
+
+		});
+		
+	</script>
+
+	<div class="food-service">
+		<div class="service-container">
+
+
+			<div class="heading-slide">
+				<span onclick="selling()">START SELLING</span>
+				<span onclick="partner()">ALREADY A PARTNER</span>
+							<hr id="Indicator">
+			</div>
+		<div class="block-service" id="selling">
+			
+			<div class="left-side-service">
+				<h2>WHY PARTNER WITH VGMEAT</h2>
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/3a21c2f1-4752-40d4-b18f-e1551d4f4451.png" alt="">
+				<h3>LEADING THE CATEFORY</h3>
+				<ul class="desc-product">
+					<li> VGMeat is the #1 selling plant-based meat brand across food service.*</li>
+					<li> Burger VGMEAT is the #1 selling plant-based burger patty across food service.*</li>
+					<li> VGMeat has the highest brand awareness amongst Millennials.
+					</li>
+				</ul>
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/dc6043ce-653e-475d-841f-c5cff0fdd8bc.png" alt="">
+				<h3>BETTER FOR CONSUMERS. <br>BETTER FOR BUSINESS.</h3>
+				<ul class="desc-product">
+					<li>2 in 5 households would switch to another restaurant if it offered plant-based meats (source: Revenue Management Solutions, Restaurant Consumer Report Q3 Update: Plant-Based Meat Alternatives)</li>
+					<li>Plant-based food sales grew 2.5x faster than total food sales from 2018-2020 (source: Good Food Institute, U.S. retail market data for the industry)</li>
+					<li>There was a 463% increase in plant-based meat orders on GrubHub in 2020.</li>
+				</ul>
+				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/5c7fef97-8e07-4e70-be63-01b8270c80d8.png" alt="">
+				<h3>VGMEAT DIFFERENCE</h3>
+				<ul class="desc-product">
+					<li>VGMeat products have no GMOs, cholesterol, antibiotics or hormones.</li>
+					<li>More meat for your money!  Beef and Burgers VGMEAT have less cook loss than ground beef.</li>
+					<li>VGMeat has the largest and most engaged following on social media in the category.</li>
+				</ul>
+			</div>
+
+			<div class="right-side-service">
+				<div class="contact-container">
+					<h2>GET IN TOUCH</h2>
+					<p>So you’re interested in carrying VGMeat products? Fill out the form below, and we’ll be in touch.</p>
+					
+					
+					<form action="" method="get" accept-charset="utf-8" class="form-contact">
+						<div class="input-box">						
+						<input type="text" name="" required="required" >
+						<span>First Name</span>
+						</div>
+						<div class="input-box">
+							<input type="text" name="" required="required" >
+							<span>Last Name</span>
+							</div>
+							<div class="input-box">							
+								<input type="text" name="" required="required">
+								<span>Business Name</span>
+								</div>
+						<div class="input-box">
+						<input type="text" name="" required="required" >	
+						<span>City</span>
+						</div>	
+							<div class="input-box">
+						<input type="text" name="" required="required" >
+						<span>Email</span>
+						</div>	
+						<div class="input-box">	
+						<input type="text" name="" required="required" >	
+						<span>Address</span>
+						</div>	
+						<div class="input-box">	
+						<textarea required="required"></textarea>
+						<span>Which VGMeat products are you interested in?</span>
+						</div>	
+						<div class="input-box">	
+						<textarea required="required" ></textarea>
+						<span>Which distributors do you buy from?*</span>
+						</div>	
+					</form>
+					<label class="checkbox"><input type="checkbox" name="">I  agree to receive emails about VGMeat products, promotions and services.</label>
+					
+					<button type="submit" class="submit-service" value="send">Submit</button>
+				</div>
+
+			</div>
+			</div>
+
+			<div class="explore-product" id="partner">
+			<h2>EXPLORE OUR PRODUCT</h2>
+			<div class="wrap-Foodservice">
+				
+			
+			<div class="card-food-service">
+				<div class="imgFood">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/605776c8-c263-42ff-aa74-c14272206509.jpeg" alt="">
+				</div>
+				<div class="infor-Food">
+					<h2> BURGER VGMEAT</h2>
+					<p>Plant-based burgers that changed the game.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Download</a>
+						<a href="" class="find-me">View Sell Page</a>
+						</div>
+				</div>
+				</div>
+			<div class="card-food-service">
+				<div class="imgFood">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/10967728-f5e8-4942-bc0e-bf35e4207b41.jpeg" alt="">
+				</div>
+				<div class="infor-Food">
+					<h2> BEEF VGMEAT</h2>
+					<p>Hearty deliciousness for every meal.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Download</a>
+						<a href="" class="find-me">View Sell Page</a>
+						</div>
+				</div>
+					</div>
+				<div class="card-food-service">
+				<div class="imgFood">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/15b49e13-5208-4079-922c-aec602fbeb31.jpeg" alt="">
+				</div>
+				<div class="infor-Food">
+					<h2>BREAKFAST SAUSAGE</h2>
+					<p>Plant-based and perfect for breakfast.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Download</a>
+						<a href="" class="find-me">View Sell Page</a>
+						</div>
+				</div>
+					</div>
+				<div class="card-food-service">
+				<div class="imgFood">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/e530528c-3870-4f28-aa17-740522d07bea.jpeg" alt="">
+				</div>
+				<div class="infor-Food">
+					<h2> SAUSAGE VGMEAT</h2>
+					<p>Juicy, meaty & totally plant-based.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Download</a>
+						<a href="" class="find-me">View Sell Page</a>
+						</div>
+				</div>
+					</div>
+				<div class="card-food-service">
+				<div class="imgFood">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/be0c7c22-e3cc-4186-992f-b1470e513fca.jpeg" alt="">
+				</div>
+				<div class="infor-Food">
+					<h2> BEEF CRUMBLES</h2>
+					<p>Better-for-you ground beef (with a kick).</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Download</a>
+						<a href="" class="find-me">View Sell Page</a>
+						</div>
+				</div>
+					</div>
+				<div class="card-food-service">
+				<div class="imgFood">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/711c3168-bd3f-46db-befd-714b2c0a7255.jpeg" alt="">
+				</div>
+				<div class="infor-Food">
+					<h2>CHICKEN VGMEAT</h2>
+					<p>Juicy, meaty & totally plant-based.</p>
+					<div class="nut-product">
+						<a href="" class="nut-link-buy">Download</a>
+						<a href="" class="find-me">View Sell Page</a>
+						</div>
+				</div>
+			</div> 
+			<!-- end service -->
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+		
+	<script>
+		var x =document.getElementById("selling");
+		var y = document.getElementById("partner");
+		var z =document.getElementById("Indicator");
+
+			function partner() {
+				y.style.left = "50px";
+				x.style.left = "1280px";
+				z.style.transform = "translateX(190px)";
+			}
+			function selling(){
+				y.style.left = "1280px";
+				x.style.left = "50px";
+				z.style.transform = "translateX(0px)";
+			}
+	</script>		
+	
+<section class="study" style="text-align:center;">
+		<h1>OUR IMPACT</h1>
+		<p>A peer-reviewed Life Cycle Analysis (LCA) conducted by the University of Michigan compared the environmental impact of the original Plant-Based Burger to a ¼ lb. U.S. beef burger. The result? Producing a Plant-Based Burger uses significantly less water, land and energy – and it generates fewer Greenhouse Gas Emissions (GHGE) than a beef burger</p>
+		<div class="btn-study"><a href="https://www.rd.com/article/plant-based-meats/" title=""><button  class="link-product">Read The Study</button></a></div>
+		<div class="statistic" style="color: rgb(117, 193, 84)">
+			<div class="impact">
+				<h2>99% </h2>
+				<h4>LESS WATER </h4>
+			</div>
+
+			<div class="impact">
+				<h2>93% </h2>
+				<h4>LESS LAND </h4>
+			</div>
+
+			<div class="impact">
+				<h2>90% </h2>
+				<h4>FEWER GHGE</h4>
+			</div>
+
+			<div class="impact">
+				<h2>46% </h2>
+				<h4>LESS ENERGY</h4>
+			</div>
+			
+			<div class="impact">
+				<h2>99% </h2>
+				<h4>LESS WATER </h4>
+			</div>
+
+			<div class="impact">
+				<h2>93% </h2>
+				<h4>LESS LAND </h4>
+			</div>
+
+			<div class="impact">
+				<h2>90% </h2>
+				<h4>FEWER GHGE</h4>
+			</div>
+
+			<div class="impact">
+				<h2>46% </h2>
+				<h4>LESS ENERGY</h4>
+			</div>	
+		</div>
+	</section>
+
+	
+
+<section class="movement">
+		<div class="block">
+			<h1>JOIN THE MOVEMENT</h1>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+		</div>
+		<div class="sign-up">
+			
+			
+			<input type="text" value="" class="email-signup" placeholder="Email">
+	
+			<button type="">Sign Up</button>
+		</div>
+</section>
+
+
+	<section class="footer">
+		<div class="container-footer">
+			<div class="footer-social">
+				<h3 class="follow-us">Connect with us on social</h3>
+				<ul class="social-links">
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-instagram"></i></span>
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span ><i class="fab fa-facebook-f"></i></span>
+
+					</a>
+					</li>
+					<li><a href="" >
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span><i class="fab fa-youtube"></i></span>
+					</a>
+					</li>
+
+
+				</ul>
+					
+			</div>
+			<div class="footer-company">
+				<h3>OUR COMPANY</h3>
+				<ul>
+					<li><a href="" >Mission</a></li>
+					<li><a href="" >Newsroom</a></li>
+					<li><a href="" >Investors</a></li>
+					<li><a href="" >Join The Team</a></li>
+				</ul>
+			</div>
+			<div class="footer-products">
+				<h3>OUR PRODUCTS</h3>
+				<ul>
+					<li><a href="" >Products</a></li>
+					<li><a href="" >Ingredients</a></li>
+					<li><a href="" >Recipes</a></li>
+					<li><a href="" >Buy</a></li>
+				</ul>
+			</div>
+			<div class="footer-store">
+				<h3>STORES & RESTAURANTS</h3>
+				<ul>
+					<li><a href="" >Sell Our Products</a></li>
+					<li><a href="" >Customer Portal</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li><a href="" >FAQs</a></li>
+					<li><a href="" >Contact us</a></li>
+				</ul>
+			</div>
+			<div class="footer-payment">
+				<h3>PAYMENT</h3>
+				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<section class="footer2">
+		<p class="copyright">© 2021 VGMeat. All Rights Reserved.</p>
+		<p>Terms Of Use</p>
+		<p>Privacy Policy</p>
+		<p>Accessibility Statement</p>
+	</section>
+
+
+
+	<script>
+		var slideshow = document.getElementById('slideshow');
+		var slides = slideshow.getElementsByTagName('img');
+		var index = 0;
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1 ) % slides.length;
+			slides[index].classList.add('active');
+
+		}
+
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length ;
+			slides[index].classList.add('active');
+		}
+
+
+		var slideshowText = document.getElementById('slideshowText');
+		var slidesText = slideshowText.getElementsByTagName('div');
+		var i = 0;
+		function nextSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i + 1 ) % slidesText.length;
+			slidesText[i].classList.add('active');
+
+		}
+
+		function prevSlideText(){
+			slidesText[i].classList.remove('active');
+			i = (i - 1 + slidesText.length) % slidesText.length ;
+			slidesText[i].classList.add('active');
+		}
+	</script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+
+			});
+		});
+	</script>
+	<script>
+		let searchForm = document.querySelector('.search-form');
+		document.querySelector('#search-btn').onclick = () => {
+			searchForm.classList.add('show');
+			shoppingCart.classList.remove('active');
+			
+		}
+		document.querySelector('#close-search').onclick = ()=>{
+			searchForm.classList.remove('show');
+		}
+		
+
+		let shoppingCart = document.querySelector('.shopping-cart');
+		document.querySelector('#cart-btn').onclick = () => {
+			shoppingCart.classList.toggle('active');
+			searchForm.classList.remove('show');
+			
+		}
+		document.querySelector('#close-shopping').onclick =() =>{
+			shoppingCart.classList.remove('active');
+
+		}
+	</script>
+	<script src="suggestions.js" ></script>
+	<script>
+		const searchwrapper = document.querySelector(".search-form");
+		const inputBox = searchwrapper.querySelector("input");
+		const suggBox = searchwrapper.querySelector(".autocom-box");
+
+		inputBox.onkeyup =(e) =>{
+			let userData = e.target.value;
+			let emptyArray = [];
+			if(userData){
+				emptyArray = suggestions.filter((data) =>{
+					return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+				});
+				emptyArray = emptyArray.map((data) =>{
+					return data ='<li>'+ data + '</li>';
+				});
+				console.log(emptyArray);
+				searchwrapper.classList.add("active");
+				showSuggestions(emptyArray);
+				let allList = suggBox.querySelectorAll("li");
+				for (let i = 0; i < allList.length; i++){
+					allList[i].setAttribute("onclick", "select(this)");
+				}
+			}else{
+				searchwrapper.classList.remove("active");
+			}
+		}
+		function select(element){
+			let selectUserData = element.textContent;
+			inputBox.value = selectUserData;
+			searchwrapper.classList.remove("active");
+		}
+		function showSuggestions(list){
+			let listData;
+			if(!list.length){
+				userValue =inputBox.value;
+				listData = '<li>'+ userValue + '</li>';
+			}else{
+				listData = list.join('');
+			}
+			suggBox.innerHTML = listData;	
+		}
+	</script>
+</body>
+</html>
